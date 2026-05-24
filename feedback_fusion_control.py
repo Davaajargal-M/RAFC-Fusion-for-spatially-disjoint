@@ -282,9 +282,9 @@ class HybridFusionController:
     def __init__(
         self,
         target_accuracy: float = 0.95,
-        alpha: float = 0.5,
-        beta: float = 0.5,
-        epsilon: float = 0.1,
+        alpha: float = 0.8,
+        beta: float = 0.2,
+        epsilon: float = 0.05,
     ) -> None:
         self.pid_controller = PIDController(target=target_accuracy)
         self.characterizer = DatasetCharacterizer()
